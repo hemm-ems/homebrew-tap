@@ -5,21 +5,21 @@
 class Hactl < Formula
   desc "Home Assistant control CLI, built for agentic workflows"
   homepage "https://github.com/hemm-ems/hactl"
-  version "2026.5.11"
+  version "2026.5.12"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hemm-ems/hactl/releases/download/v2026.5.11/hactl_2026.5.11_darwin_amd64.tar.gz"
-      sha256 "e25ec3f40947b2a8e4a69b28e39aee09fad878fbc63bf06477a7b5c0cf962335"
+      url "https://github.com/hemm-ems/hactl/releases/download/v2026.5.12/hactl_2026.5.12_darwin_amd64.tar.gz"
+      sha256 "cd81d0509411e53b854e99b9a7815c40e9bd78806046e7ede63444c40e0511d1"
 
       define_method(:install) do
         bin.install "hactl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hemm-ems/hactl/releases/download/v2026.5.11/hactl_2026.5.11_darwin_arm64.tar.gz"
-      sha256 "3c834b3598596be032d857a97a54c5eeb76e6b88ebd631a744cf2acef1a2ac24"
+      url "https://github.com/hemm-ems/hactl/releases/download/v2026.5.12/hactl_2026.5.12_darwin_arm64.tar.gz"
+      sha256 "bf6249475c2dadab4c2f413beb71391a48dbfed48abb8e16b318bc42b16e0758"
 
       define_method(:install) do
         bin.install "hactl"
@@ -29,15 +29,15 @@ class Hactl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hemm-ems/hactl/releases/download/v2026.5.11/hactl_2026.5.11_linux_amd64.tar.gz"
-      sha256 "44105b352b48a1b40fae48bfee5e6b4cd52bbd9c7923024b387adf3f8dc781e2"
+      url "https://github.com/hemm-ems/hactl/releases/download/v2026.5.12/hactl_2026.5.12_linux_amd64.tar.gz"
+      sha256 "d3ea2f812a47d8cd9f45e1fc974ea68f21767ce917ba290af9a881ba26425b98"
       define_method(:install) do
         bin.install "hactl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hemm-ems/hactl/releases/download/v2026.5.11/hactl_2026.5.11_linux_arm64.tar.gz"
-      sha256 "fb56bf5d98eba225a39211f48fd33ba876ce301b2d3ff519903757501c3cdc05"
+      url "https://github.com/hemm-ems/hactl/releases/download/v2026.5.12/hactl_2026.5.12_linux_arm64.tar.gz"
+      sha256 "ddadb374dc82f9e794c184766da3354cccfde5f90e9a856162f757301ebea343"
       define_method(:install) do
         bin.install "hactl"
       end
